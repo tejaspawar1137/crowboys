@@ -13,7 +13,7 @@ import Footer from '@/components/modules/Home-2/Footer';
 const Home2 = () => {
   return (
     <>
-      <HeaderTwo isDarkLogoSame={true} />
+      <HeaderTwo />
       <Hero />
       <About />
       <Services />

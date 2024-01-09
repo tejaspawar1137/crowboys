@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 
-function HeaderTwo({ isDarkLogoSame = false }) {
+function HeaderTwo() {
   const [menu, setMenu] = useState(false);
   const [show, setShow] = useState(false);
   const router = useRouter();
@@ -178,7 +178,7 @@ function HeaderTwo({ isDarkLogoSame = false }) {
       >
         <div className="container py-1">
           <div className="logo mx-auto">
-            PHISHING WARNING: please make sure you're visiting
+            PHISHING WARNING: please make sure you&apos;re visiting
             <b className="warning-bold"> https://crowboys.finance</b> - check
             the URL carefully.
           </div>

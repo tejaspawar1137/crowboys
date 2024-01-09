@@ -103,18 +103,28 @@ function HeaderTwo() {
     setScrollTop(window.scrollY);
   }, [scrollTop]);
 
-  useEffect(() => {
-    const sticky = isSticky();
+  let prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById('navbar').style.top = '0';
+    } else {
+      document.getElementById('navbar').style.top = '-300px';
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  const isSticky = (e) => {
     const header = document.querySelector('.header-section');
 
-    if (sticky && header) {
-      header.classList.add('header-fixed', 'fadeInUp');
+    if (header) {
+      const scrollTop = window.scrollY;
+      scrollTop >= 250
+        ? header.classList.add('header-fixed', 'fadeInUp')
+        : header.classList.remove('header-fixed', 'fadeInUp');
     }
-  });
-
-  const isSticky = () => {
-    const scrollTop = window.scrollY;
-    return scrollTop >= 250;
   };
 
   function closeAllMenus() {
@@ -180,6 +190,7 @@ function HeaderTwo() {
 
       <header
         className="header-section header-section--style3"
+        id="navbar"
         onScroll={isSticky}
       >
         <div className="container pb-3 text-center warning-wrapper text-black">

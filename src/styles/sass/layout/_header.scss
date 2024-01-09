@@ -111,8 +111,16 @@
   }
 }
 
-.warning-bold {
-  color: $thm-brand-color;
+.warning-wrapper {
+  width: 100vw;
+
+  .warning-bold {
+    color: $thm-brand-color;
+  }
+
+  .warning-bg {
+    background-color: $thm-brand-color;
+  }
 }
 
 .header-wrapper {

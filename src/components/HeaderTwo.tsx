@@ -103,12 +103,18 @@ function HeaderTwo() {
     setScrollTop(window.scrollY);
   }, [scrollTop]);
 
-  const isSticky = (e) => {
+  useEffect(() => {
+    const sticky = isSticky();
     const header = document.querySelector('.header-section');
+
+    if (sticky && header) {
+      header.classList.add('header-fixed', 'fadeInUp');
+    }
+  });
+
+  const isSticky = () => {
     const scrollTop = window.scrollY;
-    scrollTop >= 250
-      ? header.classList.add('header-fixed', 'fadeInUp')
-      : header.classList.remove('header-fixed', 'fadeInUp');
+    return scrollTop >= 250;
   };
 
   function closeAllMenus() {
@@ -176,11 +182,12 @@ function HeaderTwo() {
         className="header-section header-section--style3"
         onScroll={isSticky}
       >
-        <div className="container py-1">
-          <div className="logo mx-auto">
-            PHISHING WARNING: please make sure you&apos;re visiting
-            <b className="warning-bold"> https://crowboys.finance</b> - check
-            the URL carefully.
+        <div className="container pb-3 text-center warning-wrapper text-black">
+          <div className="logo mx-auto warning-bg rounded py-3">
+            <b className="text-white">PHISHING WARNING:</b> Please make sure
+            you&apos;re visiting
+            <b className="text-white"> https://crowboys.finance</b> - check the
+            URL carefully.
           </div>
         </div>
 

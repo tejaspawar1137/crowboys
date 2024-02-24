@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 const Contact = () => {
   return (
     <>
-      <Header />
+      <Header /> 
       <PageHeader title="Contact Us" text="Contact Us" />
       <ContactCard />
       <Footer />

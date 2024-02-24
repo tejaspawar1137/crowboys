@@ -181,7 +181,7 @@ const Hero = () => {
                     crypto exchange where innovation meets the Wild West of
                     digital assets. Saddle up for a seamless trading experience
                     with our NFT Staking, Token Swapping, and Cross-Chain
-                    Technology that's as swift as a mustang, secure as a bank
+                    Technology that is as swift as a mustang, secure as a bank
                     vault, and innovative as the pioneers of the blockchain
                     prairie.
                     {/* Anyone can invest money to different currency to increase

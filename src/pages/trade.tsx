@@ -32,7 +32,7 @@ export default function Home() {
                 <h2 className="banner__content-heading">Quality & Safety</h2>
 
                 <p style={{color:"#cccccc"}} className="banner__content-moto">
-                Welcome to Crowboys Finance the frontier of decentralized crypto exchange where innovation meets the Wild West of digital assets. Saddle up for a seamless trading experience with our NFT Staking, Token Swapping, and Cross-Chain Technology that's as swift as a mustang, secure as a bank vault, and innovative as the pioneers of the blockchain prairie.
+                Welcome to Crowboys Finance the frontier of decentralized crypto exchange where innovation meets the Wild West of digital assets. Saddle up for a seamless trading experience with our NFT Staking, Token Swapping, and Cross-Chain Technology that is as swift as a mustang, secure as a bank vault, and innovative as the pioneers of the blockchain prairie.
                 </p>
                 {/* <div className="banner__btn-group btn-group">
                   <Link

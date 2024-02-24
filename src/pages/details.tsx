@@ -282,7 +282,7 @@ const Details = () => {
                   engineering, academic, and professional experience and mixed
                   it with our hearts and souls to build what we believe to be
                   the most unique DeFi system ever proposed in such a state. Our
-                  goal wasn't to simply fork, copy, and emulate what was done
+                  goal was not to simply fork, copy, and emulate what was done
                   before, but instead utilize the wisdom we have gained through
                   trial and error to solve real world issues that face the
                   systems we all utilize today. Nothing is of course perfect,

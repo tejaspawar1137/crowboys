@@ -156,8 +156,8 @@ const Partner = () => {
                             Ecosystem
                           </h2>
                           <Slider {...settings}>
-                            {Items.map((item) => (
-                              <BoxClient className="d-flex align-items-center justify-contents-center">
+                            {Items.map((item,i) => (
+                              <BoxClient key={i} className="d-flex align-items-center justify-contents-center">
                                 <div className="d-flex align-items-start justify-content-between">
                                   <img src={item.img} alt={item.img} />
                                 </div>
@@ -200,8 +200,8 @@ const Partner = () => {
                             <span>Partners</span>{' '}
                           </h2>
                           <Slider {...settings}>
-                            {Items1.map((item) => (
-                              <BoxClient className="d-flex align-items-center justify-contents-center">
+                            {Items1.map((item,i) => (
+                              <BoxClient key={i} className="d-flex align-items-center justify-contents-center">
                                 <div className="d-flex align-items-start justify-content-between">
                                   <img src={item.img} alt={item.img} width={120}  />
                                 </div>
@@ -234,8 +234,8 @@ const Partner = () => {
                         </h2>
 
                         <Marquee direction="ltr" velocity={100}>
-                          {Items.map((item) => (
-                            <BoxClient className="d-flex align-items-center justify-contents-center">
+                          {Items.map((item,i) => (
+                            <BoxClient key={i} className="d-flex align-items-center justify-contents-center">
                               <div className="d-flex align-items-start justify-content-between">
                                 <img src={item.img} alt={item.img} />
                               </div>
@@ -299,8 +299,8 @@ const Partner = () => {
                         </h2>
 
                         <Marquee direction="ltr" velocity={100}>
-                          {Items.map((item) => (
-                            <BoxClient className="d-flex align-items-center justify-contents-center">
+                          {Items.map((item,i) => (
+                            <BoxClient key={i} className="d-flex align-items-center justify-contents-center">
                               <div className="d-flex align-items-start justify-content-between">
                                 <img src={item.img} alt={item.img} />
                               </div>

@@ -108,7 +108,7 @@ const Partner = () => {
                           Ecosystem
                         </h2>
                         <Slider {...settings} className="py-5">
-                          {Items.map((item) => (
+                          {Items.map((item,i) => (
                             <BoxClient key={i} className="d-flex align-items-center justify-contents-center">
                               <div className="d-flex align-items-start justify-content-between ">
                                 <img src={item.img} alt={item.img} />

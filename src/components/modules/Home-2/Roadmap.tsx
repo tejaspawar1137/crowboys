@@ -7,39 +7,47 @@ import { useRef } from 'react';
 const RoadmapData = [
   {
     id: 1,
-    title: 'Idea',
-    date: 'Jan 01, 2024 - Jan 15, 2024',
-    description: 'Got a crazy idea, hear me out: a pizza vending machine.',
+    title: 'Foundation',
+    description: 'Lay the necessary foundation for perpetual growth.',
   },
   {
     id: 2,
     title: 'Framing',
-    date: 'Jan 15, 2024 - Jan 30, 2024',
-    description: "Just hang it up, but make sure it's straight. Done.",
+    description: 'Outline the ecosystem vision and architecture.',
   },
   {
     id: 3,
     title: 'Design',
-    date: 'Feb 01, 2024 - Feb 15, 2024',
-    description: 'Design can make things look good and function better.',
+    description: ' Map the genesis aesthetics and technological needs.',
   },
   {
     id: 4,
     title: 'Development',
-    date: 'Feb 15, 2024 - Feb 28, 2024',
-    description: 'Development is an important aspect of life, keep growing!',
+    description: 'Develop the initial infrastructure.',
   },
   {
     id: 5,
     title: 'Testing',
-    date: 'Mar 1, 2024 - Mar 15, 2024',
-    description: 'Testing is the ultimate game of figuring out what works.',
+    description:
+      'Test initial launches through systematic and democratic community feedback (DAO).',
   },
   {
     id: 6,
-    title: 'Launched',
-    date: 'Mar 15, 2024 - Mar 30, 2024',
-    description: 'We launched our new product and we are thrilled!',
+    title: 'Refinement',
+    description:
+      'Make any and all necessary adjustments with a streamlined focus on quality assurance and security',
+  },
+  {
+    id: 7,
+    title: 'Partnership',
+    description:
+      'Public and community relations outreach, further strengthening the depth and stability of the ecosystem.',
+  },
+  {
+    id: 8,
+    title: 'Expansion',
+    description:
+      'New technologies, marketing, branding, merchandise and a cross-chain focus through technological partnerships and venture capital.',
   },
 ];
 const Roadmap = () => {
@@ -72,7 +80,7 @@ const Roadmap = () => {
         <div className="section-header section-header--max50">
           <h2 className="mb-15 mt-minus-5">
             {' '}
-            <span className="style2">Roadmap </span> of plarform
+            <span className="style2">Roadmap </span> of platform
           </h2>
           <p>
             A product roadmap shows the path ahead, helps teams plan, and guides
@@ -112,11 +120,10 @@ const Roadmap = () => {
                                 }`}
                               >
                                 <div className="roadmap__item-content">
-                                  <h5>{item.title}</h5>
+                                  <h5 style={{ color: '#fff' }}>
+                                    {item.title}
+                                  </h5>
                                   <p>{item.description}</p>
-                                </div>
-                                <div className="roadmap__item-date">
-                                  <span>{item.date}</span>
                                 </div>
                               </div>
                             </div>

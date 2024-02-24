@@ -76,8 +76,11 @@ export default function GetStarted() {
               <div className="col-lg-3 col-sm-6 rect-gradient p-3">
                 <div className="work__item">
                   <div className="work__item-inner">
-                    <div className="work__item-thumb text-center">
-                      <img src="/images/work/1.png" alt="work Step 1 Image" />
+                    <div className="work__item-thumb text-center pb-3">
+                      <img
+                        src="/images/crowboy (4).png"
+                        alt="work Step 1 Image"
+                      />
                     </div>
                     <div className="work__item-content">
                       <h4>1. Protected Wallet</h4>
@@ -93,8 +96,11 @@ export default function GetStarted() {
               <div className="col-lg-3 col-sm-6 rect-gradient p-3">
                 <div className="work__item">
                   <div className="work__item-inner">
-                    <div className="work__item-thumb text-center">
-                      <img src="/images/work/2.png" alt="work Step 2 Image" />
+                    <div className="work__item-thumb text-center pb-3">
+                      <img
+                        src="/images/crowboy (10).png"
+                        alt="work Step 2 Image"
+                      />
                     </div>
                     <div className="work__item-content">
                       <h4>2. Advanced security</h4>
@@ -110,8 +116,11 @@ export default function GetStarted() {
               <div className="col-lg-3 col-sm-6 rect-gradient p-3">
                 <div className="work__item">
                   <div className="work__item-inner">
-                    <div className="work__item-thumb text-center">
-                      <img src="/images/work/3.png" alt="work Step 3 Image" />
+                    <div className="work__item-thumb text-center pb-3">
+                      <img
+                        src="/images/Crowboy (2).png"
+                        alt="work Step 3 Image"
+                      />
                     </div>
                     <div className="work__item-content">
                       <h4>3. High level of security</h4>

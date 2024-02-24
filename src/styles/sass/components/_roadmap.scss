@@ -228,7 +228,7 @@
             width: 100%;
             left: 0;
             top: 50%;
-            border: 1px dashed $border-color-7;
+            border: 1px dashed $border-color-4;
             @include breakpoint(md) {
               display: block;
             }
@@ -246,8 +246,10 @@
         &-inner {
           @extend %p-25, %text-center, %p-rel;
           border-radius: 16px;
-          background-color: $faq-bg-color;
-
+          // background-color: $faq-bg-color;
+          background: #c3976a ;
+          // background: linear-gradient(to right, #c3976a0%, #d9d7c7 100%);
+          
           @include breakpoint(sm) {
             padding: 30px;
           }
@@ -268,12 +270,13 @@
               height: 30px;
               line-height: 28px;
               border-radius: 99px;
-              background-color: $extra-bg-color;
+              background-color: $border-color-4;
+              color: #fff !important;
               border: 1px solid $secondary-color;
               bottom: -80px;
               z-index: 1;
               @include font-size(20px);
-              color: $secondary-color;
+              
             }
 
             &::after {
@@ -283,7 +286,7 @@
               transform: translateX(-50%);
               left: 50%;
               width: 0;
-              border: 1px dashed $border-color-7;
+              border: 1px dashed $border-color-4;
               height: 50px;
               bottom: -50px;
             }

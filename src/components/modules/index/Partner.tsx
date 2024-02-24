@@ -84,6 +84,19 @@ const Partner = () => {
   return (
     <div className="partner">
       <div className="container">
+        <div className="mb-2 ">
+          <div className=" top_header_partner  inner-wedge bg-">
+            <svg
+              viewBox="0 0 1660 48"
+              preserveAspectRatio="none"
+              color="text"
+              width="0px"
+            >
+              <path d="M0 0C520.985 1.81132 1323.74 32.7547 1660 48H0V0Z"></path>
+            </svg>
+          </div>
+        </div>
+
         <div className="partner__wrapper">
           <Swiper
             className="partner__slider"
@@ -112,6 +125,21 @@ const Partner = () => {
             {}
             {/* </div> */}
           </Swiper>
+        </div>
+        <div className="mt-2">
+          <div className="bottom_header_partner inner-wedge ">
+            <svg
+              viewBox="0 0 1660 48"
+              preserveAspectRatio="none"
+              color="text"
+              width="0px"
+            >
+              <path
+                d="M0 0C520.985 1.81132 1323.74 32.7547 1660 48H0V0Z"
+                className="bg_partner"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>

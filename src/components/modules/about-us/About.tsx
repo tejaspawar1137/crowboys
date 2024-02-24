@@ -15,44 +15,42 @@ function About() {
                 data-aos-duration="800"
               >
                 <div className="about__thumb-inner">
-                  <div className="about__thumb-image floating-content">
-                    <img
-                      className="dark"
-                      src="/images/about/1.png"
-                      alt="about-image"
-                    />
-                    <div className="floating-content__top-left">
-                      <div className="floating-content__item">
-                        <h3>
-                          {' '}
-                          <span
-                            className="purecounter"
-                            data-purecounter-start="0"
-                            data-purecounter-end="10"
-                          >
-                            <CountUp end={10} duration={10} />
-                          </span>
-                          Years
-                        </h3>
-                        <p>Consulting Experience</p>
-                      </div>
-                    </div>
-                    <div className="floating-content__bottom-right">
-                      <div className="floating-content__item">
-                        <h3>
-                          {' '}
-                          <span
-                            className="purecounter"
-                            data-purecounter-start="0"
-                            data-purecounter-end="30"
-                          >
-                            <CountUp end={25} duration={5} />
-                          </span>
-                          K+
-                        </h3>
-                        <p>Satisfied Customers</p>
-                      </div>
-                    </div>
+                  <img
+                    // className="dark"
+                    src="/images/crowboy (6).png"
+                    alt="about-image"
+                  />
+                  <div className="floating-content__top-left">
+                    {/* <div className="floating-content__item bg_color">
+                      <h3>
+                        {' '}
+                        <span
+                          className=""
+                          data-purecounter-start="0"
+                          data-purecounter-end="10"
+                        >
+                          <CountUp end={10} duration={10} />
+                        </span>
+                        Years
+                      </h3>
+                      <p>Consulting Experience</p>
+                    </div> */}
+                  </div>
+                  <div className="floating-content__bottom-right">
+                    {/* <div className="floating-content__item bg_color">
+                      <h3>
+                        {' '}
+                        <span
+                          className=""
+                          data-purecounter-start="0"
+                          data-purecounter-end="30"
+                        >
+                          <CountUp end={25} duration={5} />
+                        </span>
+                        K+
+                      </h3>
+                      <p>Satisfied Customers</p>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -65,20 +63,21 @@ function About() {
               >
                 <div className="about__content-inner">
                   <h2>
-                    Meet <span>our company</span> unless miss the opportunity{' '}
+                    The <span>Wild West</span> Of Decentralization!
                   </h2>
 
                   <p className="mb-0">
-                    Hey there! So glad you stopped by to Meet Our Company. Don't
-                    miss out on this opportunity to learn about what we do and
-                    the amazing team that makes it all happen! Our company is
-                    all about creating innovative solutions and providing
-                    top-notch services to our clients. From start to finish,
-                    we're dedicated to delivering results that exceed
-                    expectations.{' '}
+                    At Crowboy Labs, we're a posse of professionals with a
+                    dash of humor, a heap of information, and a welcoming smile.
+                    Licensed, Doxxed, and KYC'd, we're the sheriffs of Web3
+                    software, crafting a metaverse where crypto cowboys and
+                    GameFi enthusiasts ride together. Our mission? To wrangle
+                    the complexities of crypto and make it accessible to every
+                    pioneer out there.
                   </p>
                   <Link
-                    href="about"
+                    href="https://crowboys.info/"
+                    target="_blank"
                     className="trk-btn trk-btn--border trk-btn--primary"
                   >
                     Explore More{' '}

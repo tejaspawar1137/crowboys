@@ -1,0 +1,50 @@
+.trade-right-section {
+   
+    width: 500px;
+    height: 400px;
+
+}
+
+.stacking-approve {
+    border: 1px solid #c3976a;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    // background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+.withdraw-btn {
+    background-color: #c3976a;
+    
+}
+.default-btn span {
+    font-size: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: "Rajdhani", sans-serif;
+    color: #ffffff;
+    padding-inline: 1.25rem;
+    padding: 15px;
+    line-height: 40px;
+    transform-origin: right;
+    transition: all 0.3s ease;
+    background: #C3976A;
+    border: 1px solid transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    font-weight: 600;
+}
+.default-btn span:hover {
+    color: #C3976A;
+    transform: translateY(-3px);
+    background: transparent;
+    border-color: #C3976A;
+    box-shadow: 0 0 10px rgba(219, 165, 40, 0.4);
+}

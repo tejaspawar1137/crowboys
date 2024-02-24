@@ -11,7 +11,7 @@ const Newsletter = () => {
               data-aos-duration="1000"
             >
               <div className="cta__thumb">
-                <img src="/images/cta/3.png" alt="cta-thumb" />
+                <img src="/images/crowboy (6).png" alt="cta-thumb" />
               </div>
               <div className="cta__subscribe">
                 <h2>

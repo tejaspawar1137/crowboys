@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import Link from 'next/link';
 const BlogData = [
   {
-    img: '/images/blog/1.png',
+    img: '/images/Carriage.png',
     alt: 'blog image',
     tag: 'Forex trading',
     title: 'Swing Trading Definition',
@@ -17,7 +17,7 @@ const BlogData = [
     date: '20/6/2024',
   },
   {
-    img: '/images/blog/2.png',
+    img: '/images/Tumbleweed.png',
     alt: 'blog image',
     tag: 'Trading market',
     title: 'hedge funds work?',
@@ -28,7 +28,7 @@ const BlogData = [
     date: '30/5/2024',
   },
   {
-    img: '/images/blog/3.png',
+    img: '/images/horse 2.png',
     alt: ' blog image',
     tag: 'Investment',
     title: 'Options Trading business?',
@@ -39,7 +39,7 @@ const BlogData = [
     date: '12/07/2024',
   },
   {
-    img: '/images/blog/1.png',
+    img: '/images/Crowboy (2).png',
     alt: 'blog image',
     tag: 'Forex trading',
     title: 'Swing Trading Definition',
@@ -50,7 +50,7 @@ const BlogData = [
     date: '20/6/2024',
   },
   {
-    img: '/images/blog/2.png',
+    img: '/images/Crowboy (1).png',
     alt: 'blog image',
     tag: 'Trading market',
     title: 'hedge funds work?',
@@ -61,7 +61,7 @@ const BlogData = [
     date: '30/5/2024',
   },
   {
-    img: '/images/blog/3.png',
+    img: '/images/crowboy (7).png',
     alt: ' blog image',
     tag: 'Investment',
     title: 'Options Trading business?',
@@ -72,7 +72,7 @@ const BlogData = [
     date: '12/07/2024',
   },
   {
-    img: '/images/blog/1.png',
+    img: '/images/Whisky.png',
     alt: 'blog image',
     tag: 'Forex trading',
     title: 'Swing Trading Definition',
@@ -83,7 +83,7 @@ const BlogData = [
     date: '20/6/2024',
   },
   {
-    img: '/images/blog/2.png',
+    img: '/images/Bank.png',
     alt: 'blog image',
     tag: 'Trading market',
     title: 'hedge funds work?',
@@ -94,7 +94,7 @@ const BlogData = [
     date: '30/5/2024',
   },
   {
-    img: '/images/blog/3.png',
+    img: '/images/crowboy.png',
     alt: ' blog image',
     tag: 'Investment',
     title: 'Options Trading business?',

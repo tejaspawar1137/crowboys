@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ScrollToTop from 'react-scroll-to-top';
+import { NavLink } from 'react-bootstrap';
 
 function Footer() {
   return (
@@ -9,20 +10,53 @@ function Footer() {
         <div className="container">
           <div className="footer__wrapper">
             <div className="footer__top footer__top--style1">
-              <div className="row gy-5 gx-4">
+              <div className="row gy-5" style={{display:"flex",alignItems:"center"}}>
                 <div className="col-md-6">
                   <div className="footer__about">
                     <Link href="/" className="footer__about-logo">
-                      <img src="images/logo/logo-dark.png" alt="Logo" />
+                      <img   src="/images/new-crowboys.png" alt="Logo"  style={{width:"200px",height:"70px",objectFit:"cover"}}     />
                     </Link>
                     <p className="footer__about-moto ">
-                      Welcome to our trading site! We offer the best, most
-                      affordable products and services around. Shop now and
-                      start finding great deals!
+                    Crowboy Labs is a software company specializing in the development of blockchain and gaming technologies.
                     </p>
+                    {/* <div className="bg_width">
+                      <div className="bg_width_a">
+                        <a href={'https://www.apple.com/app-store/'}>
+                          <div className="bg_width_A">
+                            <div style={{ alignSelf: 'center' }}>
+                              <img
+                                src="/images/apple.png"
+                                className=" app_img"
+                              />
+                            </div>
+                            <div className="apple">
+                              <span className=" span">Download on the</span>
+                              <p className="apple_text">Apple Store</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div className="bg_width_b">
+                        <a href="https://www.apple.com/app-store/">
+                          <div className="bg_width_B">
+                            <div style={{ alignSelf: 'center' }}>
+                              <img
+                                src="./images/googleplay.png"
+                                className="google_img"
+                              />
+                            </div>
+                            <div className="google">
+                              <span className="span">GET IT ON</span>
+                              <p className="google_text">Google Play</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div> */}
                   </div>
                 </div>
-                <div className="col-md-2 col-sm-4 col-6">
+                <div className="col-md-2 col-sm-4 col-4">
                   <div className="footer__links">
                     <div className="footer__links-tittle">
                       <h6>Quick links</h6>
@@ -31,159 +65,102 @@ function Footer() {
                       <ul className="footer__linklist">
                         <li className="footer__linklist-item">
                           {' '}
-                          <Link href="about">About Us</Link>
+                          <Link href="https://docs.crowboys.org/" target='_blank'>About Us</Link>
                         </li>
                         <li className="footer__linklist-item">
                           {' '}
-                          <Link href="team">Teams</Link>
+                          <Link href="https://docs.crowboys.org/team/team" target='_blank'>Teams</Link>
                         </li>
                         <li className="footer__linklist-item">
                           {' '}
-                          <Link href="services">Services</Link>{' '}
+                          <Link href="https://docs.crowboys.org/the-game/description" target='_blank'>Game</Link>{' '}
                         </li>
                         <li className="footer__linklist-item">
                           {' '}
-                          <Link scroll={false} href="">
-                            Features
+                          <Link scroll={false} href="https://docs.crowboys.org/tokenomics/tokenomics" target="_blank">
+                          Tokenomics
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-2 col-sm-4 col-6">
-                  <div className="footer__links">
-                    <div className="footer__links-tittle">
-                      <h6>Support</h6>
-                    </div>
-                    <div className="footer__links-content">
-                      <ul className="footer__linklist">
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Terms & Conditions
-                          </Link>
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Privacy Policy
-                          </Link>
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            FAQs
-                          </Link>
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Support Center
-                          </Link>{' '}
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <div className="col-md-2 col-sm-4 col-8" style={{display:"flex",flex:1,alignItems:"center"}}>
+                <img src="/images/well.png" alt="well image" style={{width:"300px",height:"250px"}} />
                 </div>
-                <div className="col-md-2 col-sm-4">
-                  <div className="footer__links">
-                    <div className="footer__links-tittle">
-                      <h6>Company</h6>
-                    </div>
-                    <div className="footer__links-content">
-                      <ul className="footer__linklist">
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Careers
-                          </Link>
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Updates
-                          </Link>
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Job
-                          </Link>{' '}
-                        </li>
-                        <li className="footer__linklist-item">
-                          {' '}
-                          <Link scroll={false} href="">
-                            Announce
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div className="footer__bottom">
               <div className="footer__end">
                 <div className="footer__end-copyright">
                   <p className=" mb-0">
-                    © 2024 All Rights Reserved{' '}
+                    © 2024 All Rights Reserved{' '} 
                     <Link
                       href="https://crowboys.info"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Crowboys
+                      Crowboy Labs
                     </Link>{' '}
                   </p>
                 </div>
                 <div>
                   <ul className="social">
-                    <li className="social__item">
-                      <Link
-                        scroll={false}
-                        href=""
-                        className="social__link social__link--style22"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </Link>
-                    </li>
-                    <li className="social__item">
-                      <Link
-                        scroll={false}
-                        href=""
-                        className="social__link social__link--style22 "
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </li>
-                    <li className="social__item">
-                      <Link
-                        scroll={false}
-                        href=""
-                        className="social__link social__link--style22"
-                      >
-                        <i className="fa-brands fa-linkedin-in"></i>
-                      </Link>
-                    </li>
-                    <li className="social__item">
-                      <Link
-                        scroll={false}
-                        href=""
-                        className="social__link social__link--style22"
-                      >
-                        <i className="fab fa-youtube"></i>
-                      </Link>
-                    </li>
-                    <li className="social__item">
-                      <Link
-                        scroll={false}
-                        href=""
-                        className="social__link social__link--style22 "
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </Link>
-                    </li>
+                  <li className="social__item">
+                <Link
+                  scroll={false}
+                  href="https://twitter.com/Crowboylabs"
+                  target='_blank'
+                  className="social__link social__link--style22 "
+                >
+                  <i className="fab fa-twitter"></i>
+                </Link>
+              </li>
+              <li className="social__item">
+                <Link
+                  scroll={false}
+                  href="https://t.me/crowboys"
+                  target='_blank'
+                  className="social__link social__link--style22"
+                >
+                  <i className="fa-brands fa-telegram"></i>
+                </Link>
+              </li>
+          
+              <li className="social__item">
+                <Link
+                  scroll={false}
+                  href="https://crowboys.info/"
+                  target='_blank'
+                  className="social__link social__link--style22"
+                >
+                  <i className="fa-solid fa-gamepad"></i>
+                </Link>
+              </li>
+          
+
+              <li className="social__item">
+                <Link
+                  scroll={false}
+                  href="https://www.linkedin.com/company/crowboys"
+                  target='_blank'
+                  className="social__link social__link--style22"
+                >
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </Link>
+              </li>
+
+              <li className="social__item">
+                <Link
+                  scroll={false}
+                  href=" https://discord.gg/crowboys-labs-932735740423598130"
+                  target='_blank'
+                  className="social__link social__link--style22"
+                >
+                    <i className="fa-brands fa-discord"></i>
+                </Link>
+              </li>
                   </ul>
                 </div>
               </div>
@@ -192,7 +169,7 @@ function Footer() {
         </div>
         <div className="footer__shape">
           <span className="footer__shape-item footer__shape-item--1">
-            <img src="images/footer/1.png" alt="shape icon" />
+            {/* <img src="images/footer/1.png" alt="shape icon" /> */}
           </span>
           <span className="footer__shape-item footer__shape-item--2">
             {' '}

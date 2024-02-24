@@ -9,8 +9,7 @@ const About = () => {
             <div className="col-lg-6">
               <div className="section-header mb-50">
                 <h2>
-                  Experienced trading <span className="style3">platform </span>
-                  to grow
+                  Experience <span className="style3">Superior</span> Service
                 </h2>
               </div>
               <div
@@ -29,10 +28,11 @@ const About = () => {
                     </div>
                   </div>
                   <div className="about__content-details">
-                    <h5>Easy to lend</h5>
+                    <h5>NFT Staking</h5>
                     <p className="mb-0">
-                      It's easy to lend a helping hand to those in need,
-                      especially when we all stick together.
+                      Secure your digital assets and earn rewards with our NFT
+                      staking. Your tokens aren't just sitting idle; they're
+                      working harder than a gold miner in a rush.
                     </p>
                   </div>
                 </div>
@@ -53,10 +53,11 @@ const About = () => {
                     </div>
                   </div>
                   <div className="about__content-details">
-                    <h5>Exchange money</h5>
+                    <h5>Token Staking</h5>
                     <p className="mb-0">
-                      If you need to exchange money, just hit up the currency
-                      exchange at the airport. Easy-peasy.
+                      Stake your claim in the crypto world with our token
+                      staking services. It's like planting a seed and watching
+                      your digital garden grow.
                     </p>
                   </div>
                 </div>
@@ -77,10 +78,11 @@ const About = () => {
                     </div>
                   </div>
                   <div className="about__content-details">
-                    <h5>Online wallet</h5>
+                    <h5>Cross Chain Technology</h5>
                     <p className="mb-0">
-                      When travelling abroad, don't forget to exchange money at
-                      the airport or a local bank.
+                      Travel across blockchain borders with ease. Our
+                      cross-chain technology is the bridge over the wild rivers
+                      of digital assets.
                     </p>
                   </div>
                 </div>
@@ -88,16 +90,16 @@ const About = () => {
             </div>
             <div className="col-lg-6">
               <div
-                className="about__thumb about__thumb--style2"
+                className="about__thumb"
                 data-aos="fade-left"
                 data-aos-duration="800"
               >
                 <div className="about__thumb-inner mt-30 mt-lg-0">
-                  <div className="about__thumb-image  text-center">
+                  <div className="  text-center">
                     <img
-                      src="/images/about/3.png"
+                      src="/images/Train.png"
                       alt="about-image"
-                      className="dark"
+                      // className="dark"
                     />
                   </div>
                 </div>

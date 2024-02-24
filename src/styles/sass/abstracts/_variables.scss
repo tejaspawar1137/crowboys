@@ -6,17 +6,17 @@
 //*** Custom variables for theme starthite
 //*-----------------------------------
 
-$thm-brand-color: #c3976a;
-$thm-brand-color-dark: #c3976a;
+$thm-brand-color: #c3976a ;
+$thm-brand-color-dark: #c3976a ;
 
-$thm-secondary-color: #c3976a;
-$thm-secondary-color-dark: #c3976a;
+$thm-secondary-color: #c3976a ;
+$thm-secondary-color-dark: #c3976a ;
 
 $thm-tertiary-color: #e0faf2;
-$thm-tertiary-color-dark: #c3976a;
+$thm-tertiary-color-dark: #c3976a ;
 
 $thm-tertiary-color2: #f5f7fc;
-$thm-tertiary-color2-dark: #c3976a;
+$thm-tertiary-color2-dark: #c3976a ;
 
 $thm-tertiary-color3: #f5f7fc;
 $thm-tertiary-color3-dark: #0e221e;
@@ -28,7 +28,7 @@ $thm-body-color-light: #ffffff;
 $thm-body-color-dark: rgba(0, 0, 0, 0.7);
 
 $thm-bg-color-light: #52eaf0;
-$thm-bg-color-dark: #c3976a;
+$thm-bg-color-dark: #c3976a ;
 
 $thm-border-color-light: #e6edfb;
 $thm-border-color-dark: #e6edfb1f;
@@ -36,7 +36,7 @@ $thm-border-color-dark: #e6edfb1f;
 $text-gradient: linear-gradient(to right, #c3976a 0%, #d9d7c7 100%);
 
 // $thm-border-color-2-light: #E6EDFB;
-// $thm-border-color-2-dark: #c3976a;
+// $thm-border-color-2-dark: #c3976a ;
 
 // social border colors
 $thm-social-border-color-light: #f0f4fa;
@@ -62,7 +62,7 @@ $thm-bg-color-2-light: #f5f8fc;
 $thm-bg-color-2-dark: #2d2c2c;
 
 $thm-bg-color-3-light: #ffffff;
-$thm-bg-color-3-dark: #c3976a;
+$thm-bg-color-3-dark: #c3976a ;
 
 // todo for rpba
 $thm-bg-color-4-light: linear-gradient(
@@ -114,7 +114,7 @@ $thm-form-focus-dark: #366cd5;
 
 // other colors
 $thm-wh-color: #fff;
-$thm-wh-color-dark: #c3976a;
+$thm-wh-color-dark: #c3976a ;
 
 $thm-black-color: #000;
 $thm-black-color-dark: #fff;
@@ -142,8 +142,8 @@ $thm-danger-dark: #ff0000;
   --tertiary-color4: #{$thm-tertiary-color4};
   --body-color: #{$thm-body-color-light};
 
-  --header-bg-color: #c3976a;
-  --header-bg-color2: #c3976a;
+  --header-bg-color: #c3976a ;
+  --header-bg-color2: #c3976a ;
 
   --border-color: #{$thm-border-color-light};
   --border-color-2: #e6edfb;
@@ -156,7 +156,7 @@ $thm-danger-dark: #ff0000;
   --border-color-9: rgba(5, 0, 26, 0.12);
   --border-color-10: rgba(184, 182, 193, 0.12);
 
-  --feature-bg-color: #c3976a;
+  --feature-bg-color: #c3976a ;
 
   --social-border-color: #{$thm-social-border-color-light};
   --social-border-color-2: #{$thm-social-border-color-2-light};
@@ -236,7 +236,7 @@ $thm-danger-dark: #ff0000;
   --bg-shape-color-2: #d5e5f9;
   --bg-shape-color-trans-2: rgba(255, 255, 255, 0.22);
 
-  --footer-bg-color: #c3976a;
+  --footer-bg-color: #c3976a ;
   --faq-img-bg-shadow: #16d466;
   --pagination-bg-color: #e0faf2;
 
@@ -251,7 +251,7 @@ $thm-danger-dark: #ff0000;
   --arrow-icon-color: #0a4fd5;
   --header-border-color: #ebe9e1;
   --header-border-color2: rgba(255, 255, 255, 0.12);
-  --banner2-bg-color: #c3976a;
+  --banner2-bg-color: #c3976a ;
   --about-img-bg-shadow: #85f2d382;
   --cta-img-bg-shadow: #45554b;
 
@@ -304,7 +304,7 @@ $thm-danger-dark: #ff0000;
   --border-color: #{$thm-border-color-dark};
   --border-color-2: rgba(255, 255, 255, 0.08);
   --border-color-3: #e6edfb;
-  --border-color-4: #c3976a;
+  --border-color-4: #c3976a ;
   --border-color-5: rgba(255, 255, 255, 0.08);
   --border-color-6: rgba(255, 255, 255, 0.08);
   --border-color-7: #00533b;
@@ -312,8 +312,8 @@ $thm-danger-dark: #ff0000;
   --border-color-9: rgba(184, 182, 193, 0.12);
   --border-color-10: rgba(184, 182, 193, 0.12);
 
-  --header-bg-color: #c3976a;
-  --header-bg-color2: #c3976a;
+  --header-bg-color: #c3976a ;
+  --header-bg-color2: #c3976a ;
 
   --feature-bg-color: rgba(229, 237, 248, 0.087);
 
@@ -360,7 +360,7 @@ $thm-danger-dark: #ff0000;
   --bg-color-13: rgb(33, 52, 47);
   --bg-color-14: #455248;
   --bg-color-15: rgba(43, 40, 40, 0.308);
-  --bg-color-16: #c3976a;
+  --bg-color-16: #c3976a ;
   --bg-color-17: rgb(220, 53, 69);
 
   --bg-white: #{$thm-bg-white-dark};
@@ -383,7 +383,7 @@ $thm-danger-dark: #ff0000;
   --faq-bg-color: #21342f;
 
   --extra-bg-color: #21342f;
-  --tag-bg-color: #c3976a;
+  --tag-bg-color: #c3976a ;
 
   // shape colors
   --bg-shape-color: rgba(213, 229, 249, 0.08);
@@ -392,23 +392,23 @@ $thm-danger-dark: #ff0000;
   --bg-shape-color-2: rgba(213, 229, 249, 0.16);
   --bg-shape-color-trans-2: rgba(255, 255, 255, 0.04);
 
-  --footer-bg-color: #c3976a;
+  --footer-bg-color: #c3976a ;
 
   --faq-img-bg-shadow: #16d4668f;
-  --pagination-bg-color: #c3976a;
+  --pagination-bg-color: #c3976a ;
 
   --section-bg-color: rgba(237, 242, 248, 0.02);
   --sec-bg-color-2: #081c17;
 
-  --account-bg-color: #c3976a;
-  --account-bg-color2: #c3976a;
+  --account-bg-color: #c3976a ;
+  --account-bg-color2: #c3976a ;
 
   // arrow color
   --arrow-color1: #2b4b43;
   --arrow-icon-color: #fff;
   --header-border-color: rgba(255, 255, 255, 0.16);
   --header-border-color2: rgba(255, 255, 255, 0.12);
-  --banner2-bg-color: #c3976a;
+  --banner2-bg-color: #c3976a ;
   --about-img-bg-shadow: #85f2d382;
   --cta-img-bg-shadow: #45554b;
 

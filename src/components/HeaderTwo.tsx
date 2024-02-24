@@ -3,10 +3,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
-
+import { AiOutlineClose } from 'react-icons/ai';
 function HeaderTwo() {
   const [menu, setMenu] = useState(false);
   const [show, setShow] = useState(false);
+  const [isNavbarActive, setIsNavbarActive] = useState(true);
   const router = useRouter();
   const [scrollTop, setScrollTop] = useState(0);
   const { open } = useWeb3Modal();
@@ -193,28 +194,63 @@ function HeaderTwo() {
         id="navbar"
         onScroll={isSticky}
       >
-        <div className="container pb-3 text-center warning-wrapper text-black">
-          <div className="logo mx-auto warning-bg rounded py-3">
-            <b className="text-white">PHISHING WARNING:</b> Please make sure
-            you&apos;re visiting
-            <b className="text-white"> https://crowboys.finance</b> - check the
-            URL carefully.
+        {isNavbarActive && (
+          <div
+            style={{ background: '#c3976a ' }}
+            
+            className=" p- text-center warning-wrapper text-black top-new-navbar"
+          >
+            <span>
+              <img
+                src="images/crowboy.png"
+                alt="alert-img"
+                className="alert-img"
+              />
+            </span>
+            <span className="logo mx-auto warning-bg ">
+              <b style={{ color: ' #c3976a ', fontSize: '16px' }}>
+                PHISHING WARNING:
+              </b>{' '}
+              <span style={{ color: '#2d2c2c', fontSize: '15px' }}>
+                please make sure you&apos;re visiting
+              </span>
+              <b className="text-white" style={{ fontSize: '15px' }}>
+                {' '}
+                https://crowboys.finance
+              </b>{' '}
+              <span style={{ color: '#2d2c2c', fontSize: '15px' }}>
+                - check the URL carefully.
+              </span>
+            </span>
+            <span
+              style={{
+                float: 'right',
+                textAlign: 'right',
+                marginTop: '20px',
+                marginRight: '24px',
+              }}
+            >
+              <AiOutlineClose
+                style={{ fontSize: '18px', color: '#fff', cursor: 'pointer' }}
+                onClick={() => setIsNavbarActive(false)}
+              />
+            </span>
           </div>
-        </div>
-
+        )}
         <div className="header-bottom">
           <div className="container-fluid">
             <div className="header-wrapper">
-              <div className="logo d-flex justify-left">
-                <Link href="/" className="px-3">
-                  <img src="/images/logo/logo-dark.png" alt="logo" />
-                </Link>
+              <div className="logo d-flex justify-left align-items-center">
+                {/* <Link href="/" className="px-3">
+                  <img src="/images/new-crowboys.png" alt="logo" />
+                </Link> */}
 
                 <Link href="/">
                   <img
-                    src="/images/logo/logo-text.png"
+                    src="/images/new-crowboys.png"
                     className="d-none d-md-block"
                     alt="logo"
+                  style={{width:"180px",height:"60px",objectFit:"cover",marginTop:"5px"}}
                   />
                 </Link>
 
@@ -223,28 +259,23 @@ function HeaderTwo() {
                     id="menu"
                     className={`menu menu--style2 ${menu ? 'active' : ''}`}
                   >
-                    <li className="megamenu menu-item">
+                    <li className="trade ">
                       <Link href="/trade">Trade</Link>
                     </li>
 
-                    <li className="menu-item-has-children">
-                      <Link href="/services" onClick={toggleActive}>
-                        Services
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link href="/services">Services</Link>
-                        </li>
-                        <li>
-                          <Link href="/service-details">Services Details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <Link scroll={false} href="/#0" onClick={toggleActive}>
-                        About
-                      </Link>
-                      <ul className="submenu">
+                    <ul className="subnav">
+                      <button className="subnavbtn" onClick={toggleActive}>
+                        Staking
+                      </button>
+                      <div className="subnav-content">
+                        <Link href="/nft-staking">NFT Staking</Link>
+                        <Link href="/nft-token">Token Staking</Link>
+                      </div>
+                    </ul>
+
+                    <ul className="subnav">
+                      <button onClick={() => window.open("https://www.crowboys.io/")} className="subnavbtn">Game</button>
+                      {/* <div className="subnav-content">
                         <li>
                           <Link href="/about">About Us</Link>
                         </li>
@@ -260,48 +291,19 @@ function HeaderTwo() {
                         <li>
                           <Link href="/team-details">Team Details</Link>
                         </li>
-                      </ul>
-                    </li>
+                      </div> */}
+                    </ul>
 
-                    <li className="menu-item-has-children">
-                      <Link scroll={false} href="/#0" onClick={toggleActive}>
-                        Pages
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link href="blogs">Blogs</Link>
-                        </li>
-                        <li>
-                          <Link href="blog-sidebar">Blog - Side Bar</Link>
-                        </li>
-                        <li>
-                          <Link href="blog-details">Blog Details</Link>
-                        </li>
-                        <li>
-                          <Link href="signup">Sign Up</Link>
-                        </li>
-                        <li>
-                          <Link href="signup-2">Sign Up 2</Link>
-                        </li>
-                        <li>
-                          <Link href="signin">Sign In</Link>
-                        </li>
-                        <li>
-                          <Link href="signin-2">Sign In 2</Link>
-                        </li>
-                        <li>
-                          <Link href="forgot-pass">Reset Password</Link>
-                        </li>
-                        <li>
-                          <Link href="forgot-pass-2">Reset Password 2</Link>
-                        </li>
-                        <li>
-                          <Link href="404">404 Error</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link href="contact">Contact Us</Link>
+                    <ul className="subnav">
+                      <button className="subnavbtn">Launchpad</button>
+                      <div className="subnav-content">
+                  
+                      <Link href="/launchpad">NFT Launchpad</Link>
+                        <Link href="/launchpad-icos">ICO Launchpad</Link>
+                      </div>
+                    </ul>
+                    <li className="trade ">
+                      <Link href="https://docs.crowboys.org/" target="_blank">Wild Paper</Link>
                     </li>
                   </ul>
                 </div>

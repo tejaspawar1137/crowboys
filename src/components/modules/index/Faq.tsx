@@ -82,8 +82,8 @@ const Faq = () => {
                 data-aos-duration="1000"
               >
                 <img
-                  className="dark"
-                  src="/images/others/1.png"
+                  // className="dark"
+                  src="/images/Carriage.png"
                   alt="faq-thumb"
                 />
               </div>
@@ -91,7 +91,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className="faq__shape faq__shape--style1">
+      <div className="faq__shape ">
         <span className="faq__shape-item faq__shape-item--1">
           <img src="/images/others/2.png" alt="shpae-icon" />
         </span>

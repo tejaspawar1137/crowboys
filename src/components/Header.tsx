@@ -169,16 +169,16 @@ function Header({ headerClass = null }) {
         className={`header-section ${headerClass ? headerClass : 'bg-color-3'}`}
         onScroll={isSticky}
       >
-        <div className="header-bottom">
+        <div className="header-bottom" style={{padding:"10px"}}>
           <div className="container">
             <div className="header-wrapper">
               <div className="logo">
                 <Link href="/">
-                  <img
+                  {/* <img
                     className="dark"
-                    src="/images/logo/logo.png"
+                    src="/images/logo/logo.jpg"
                     alt="logo"
-                  />
+                  /> */}
                 </Link>
               </div>
               <div className="menu-area">
@@ -274,7 +274,7 @@ function Header({ headerClass = null }) {
                                     >
                                       <span>Preview</span>
                                     </Link>
-                                  </div>
+                                    header-bottom                </div>
                                 </div>
                                 <h3 className="home-showcase__title">
                                   {' '}

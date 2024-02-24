@@ -29,7 +29,9 @@
   &__thumb {
     &-image {
       @extend %p-rel;
-
+.about__thumb-image{
+  // background-image: url("../../../../public/images/about/home3/consultancy.png")
+}
       img {
         @extend %p-rel;
         border-radius: 20px;
@@ -335,4 +337,11 @@
       }
     }
   }
+}
+
+
+
+.bg_color{
+  background: #c3976a ;
+  background: linear-gradient(to right, #c3976a 0%, #d9d7c7 100%);
 }

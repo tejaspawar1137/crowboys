@@ -45,6 +45,11 @@
     }
   }
 
+ @media (max-width: 700px) and (min-width: 250px) {
+  .top-new-navbar {
+   display: none 
+  }
+ }
   &--style3 {
     @extend %p-abs;
     content: '';
@@ -92,7 +97,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 10px -5px rgba(238, 153, 153, 0.3);
       z-index: 999;
       // background-color: $header-bg-color;
       background-color: $bg-color-13;
@@ -119,7 +124,9 @@
   }
 
   .warning-bg {
-    background-color: $thm-brand-color;
+    background-color:rgba(39, 38, 44, 0.4);
+    border-radius: 16px;
+    padding: 16px;
   }
 }
 
@@ -131,15 +138,22 @@
   }
 
   @include breakpoint(lg) {
-    padding-block: 13px;
+    padding-block: 0px;
   }
 
+  .logo {
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+  }
   .logo {
     a {
       @extend %d-block;
 
       img {
+        // background-color: var(--body-color);
         max-width: 100%;
+        height: 120px;
       }
     }
 
@@ -181,6 +195,18 @@
   }
 }
 
+.trk-btn{
+  font-size: 1rem;
+  border: transparent;
+  color: #0c263a;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  text-transform: capitalize;
+  line-height: 1;
+  border-radius: 16px !important;
+}
 .trk-btn--outline22 {
   background-color: transparent;
 }
@@ -196,11 +222,13 @@
   > li {
     > a {
       @include font-size(16px);
-      padding: 15px 22px;
+      padding: 10px 15px;
       text-transform: capitalize;
       font-family: $text-font;
       color: $title-color;
       font-weight: 500;
+      margin-top: 5px;
+      margin-bottom: 5px;
 
       // light dark bedge
       span {
@@ -532,6 +560,9 @@
 
 .menu-item-has-children {
   > a {
+    background-color: white;
+    color: #333;
+    border-radius: 15px;
     @extend %p-rel;
 
     &::after {
@@ -850,6 +881,13 @@
 }
 
 // trk-rgba
+
+.alert-img {
+  height: 70px;
+  background-position:100% 100%;
+  max-width: 100%;
+}
+
 .subtitle {
   @extend %d-flex, %align-i-center;
   gap: 10px;
@@ -992,3 +1030,84 @@
 }
 
 //  --------------  >>> page header style end here <<< ------------- //
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.trade {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.trade :hover {
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+  margin-top: 4.8px;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+}
+
+.subnav-content {
+  background: #c3976a!important;
+  display: none;
+  position: fixed;
+  width: 25%;
+  z-index: 1;
+  border-radius: 16px;
+  padding: 5px 0px 5px 0px;
+  margin-top: 6px;
+  align-self: center;
+}
+
+.subnav-content a {
+  color: white;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  height: 48px;
+  justify-content: space-between;
+  outline: 0px;
+  padding: 10px;
+  width: 100%;
+  pointer-events: inherit;
+  border-radius: 8px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+  text-align: start;
+}

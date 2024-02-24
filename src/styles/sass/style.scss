@@ -105,10 +105,19 @@ Tags: Crypto, Forex, and Stocks Trading Business
   'components/cta', 'components/story', 'components/sidebar', 'components/faq',
   'components/error', 'components/servicer-details', 'components/nav',
   'components/counter', 'components/comment', 'components/accordion',
-  'components/roadmap', 'components/about';
+  'components/roadmap', 'components/about', 'components/getting-start',
+  'components/_discover', 'components/Community', 'components/EcosystemPartner';
 
 // 6. Page-specific styles
 @import 'pages/home';
-
+@import 'pages/trade.scss';
+@import "pages/launchpad.scss";
+@import "pages/nft-staking.scss";
+@import "pages/nft-token.scss";
+@import "pages/details.scss";
+@import "pages/nft-token-details.scss";
+@import "pages/depositdetails.scss";
 // 8. Themes
 @import 'themes/theme';
+
+// @import '_headerTwo.scss'

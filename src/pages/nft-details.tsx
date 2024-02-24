@@ -172,7 +172,7 @@ const NFTDetails = () => {
                       }}
                     >
                       {' '}
-                      $0.50
+                      TBA
                     </span>
                   </div>
                 </div>

@@ -41,6 +41,7 @@ const Launchpad = () => {
                   style={{
                     width: '100%',
                     height:"300px",
+                    objectFit:"cover",
                     borderTopRightRadius: '25px',
                     borderTopLeftRadius: '25px',
                   }}
